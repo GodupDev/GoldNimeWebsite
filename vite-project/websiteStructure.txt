@@ -1,0 +1,20 @@
+src/
+├── assets/            
+│   └── thumbnails/                  
+├── components/             
+│   ├── ui/                  
+│   │   ├── icons/
+│   │   ├── SearchBar.jsx
+│   │   └── Card.jsx
+│   ├── layout/               
+│   │   ├── Header.jsx
+│   │   └── Footer.jsx
+│   └── form/                 
+│       └── SearchBar.jsx
+├── pages/                    
+│   ├── Home/                
+│   │   └── index.jsx
+│   └── AnimeDetail/               
+│       └── index.jsx
+├── App.jsx                   
+└── main.jsx                  
