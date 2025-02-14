@@ -33,14 +33,27 @@ const MenuCustom = styled(Menu)`
   }
 `;
 
-const HeaderBar = () => {
+const HeaderBar = (props) => {
   return (
     <div style={{ paddingBottom: "25px" }}>
       <HeaderCustom>
-        <Logo>GoldNime</Logo>
+        <Logo
+          onClick={() => {
+            props.setCurrentFilm("None");
+          }}
+        >
+          GoldNime
+        </Logo>
 
         <MenuCustom mode="horizontal">
-          <Menu.Item key="1">Trang chủ</Menu.Item>
+          <Menu.Item
+            key="1"
+            onClick={() => {
+              props.setCurrentFilm("None");
+            }}
+          >
+            Trang chủ
+          </Menu.Item>
           <Menu.Item key="2">Danh sách anime</Menu.Item>
         </MenuCustom>
 

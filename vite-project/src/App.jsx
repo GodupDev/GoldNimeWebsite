@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div style={{ padding: "0 40px" }}>
-      <Header />
+      <Header setCurrentFilm={setCurrentFilm} />
       {currentFilm === "None" ? (
         <HomePage
           listFilm={listFilm}
